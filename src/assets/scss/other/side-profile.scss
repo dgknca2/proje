@@ -1,0 +1,241 @@
+@import "../variables/index";
+
+.question {
+  &-right {
+    flex: 1;
+  }
+
+  &-title {
+    font-weight: 800;
+    line-height: 48px;
+  }
+
+  &-content {
+    display: flex;
+  }
+
+  &-txt {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  @at-root .profile {
+    width: 250px;
+    flex-shrink: 0;
+
+    &__user-cont {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      background-color: $blueLight2;
+      margin-top: 10px;
+    }
+
+    &-img {
+      height: 45px;
+      width: 45px;
+      overflow: hidden;
+      position: relative;
+      margin-right: 20px;
+
+      &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-username {
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    &__icon {
+      font-size: 20px;
+      margin-right: 7.5px;
+      display: flex;
+      align-items: center;
+
+      &.badge {
+        color: $rep;
+      }
+
+      &.accepted {
+        color: $accepted;
+      }
+    }
+
+    &__txt {
+      font-size: 14px;
+    }
+  }
+
+  @at-root .shot {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &-container {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      $bg: #f5f5f5;
+      background-image: conic-gradient($bg 0deg 90deg, #fff 90deg 180deg, $bg 180deg 270deg, #fff 270deg 360deg);
+      background-size: 20px 20px;
+    }
+
+    &-img {
+      height: 500px;
+      display: inline-block;
+      position: relative;
+    }
+
+    &__img {
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &-infos {
+      width: 270px;
+      flex-shrink: 0;
+      margin-left: 20px;
+    }
+
+    &__link {
+      // border: 1px solid $blueLight;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 12.5px;
+      max-width: 75px;
+      // overflow: hidden;
+      transition: 0.1s;
+
+      &__icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      &__txt {
+        color: $fontColor2;
+        display: inline-block;
+        font-size: 18px;
+        white-space: nowrap;
+        padding-left: 12px;
+        padding-right: 10px;
+      }
+
+      &:hover {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.user-action-time {
+  font-size: 14px;
+  margin-top: 30px;
+
+  .started-link,
+  .relativetime {
+    color: $fontColor2;
+  }
+}
+
+.answers {
+  margin-top: 50px;
+
+  &-subheader {
+    border-bottom: 1px solid $border-color-1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @at-root #tabs {
+    a {
+      color: $fontColor;
+      padding: 0 15px;
+      text-transform: capitalize;
+    }
+
+    .is-selected {
+      color: $blueDark;
+      font-weight: 600;
+    }
+  }
+}
+
+.answer {
+  padding-top: 30px;
+
+  &:not(.first) {
+    margin-top: 40px;
+    border-top: 1px solid $border-color-1;
+  }
+
+  &-like {
+    font-size: 32px;
+    color: $border-color-1;
+  }
+
+  &-accepted {
+    font-size: 36px;
+    color: $border-color-1;
+  }
+
+  .s-btn.active {
+    .answer-like {
+      color: red;
+    }
+
+    .answer-accepted {
+      color: $green;
+    }
+  }
+
+  .comments {
+    margin-left: 63px;
+  }
+}
+
+.post {
+  &-layout {
+    display: grid;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+
+    &--left {
+      padding-right: 15px;
+    }
+  }
+
+  &-text {
+    padding: 10px 0;
+  }
+}
+
+.s-btn {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.like-count {
+  font-size: 18px;
+  text-align: center;
+  user-select: none;
+}

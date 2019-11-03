@@ -1,0 +1,1 @@
+{"version":3,"file":"variables.css","sources":["base/variables.scss"],"sourcesContent":["$font-family: \"Roboto\" !default;\r\n$font-size: 16px !default;\r\n"],"names":[],"mappings":""}

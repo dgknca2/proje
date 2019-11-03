@@ -1,0 +1,53 @@
+@import "../variables/index";
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.mobile-only {
+  @include bp(r-mobile) {
+    display: none;
+  }
+}
+
+@for $i from 1 through 20 {
+  .mt-#{$i*5} {
+    margin-top: #{$i * 5}px;
+  }
+}

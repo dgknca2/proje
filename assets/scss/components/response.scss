@@ -1,0 +1,18 @@
+@import "../variables/index";
+
+.response {
+  margin-top: 100px;
+}
+
+.responser {
+  &-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &-username {
+    font-size: 16px;
+    &:before {
+      content: "@";
+    }
+  }
+}

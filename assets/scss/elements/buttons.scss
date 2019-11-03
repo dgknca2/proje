@@ -1,0 +1,58 @@
+@import "../variables/index";
+
+.button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: $fontColor;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px;
+  min-width: 100px;
+  font-size: 15px;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--fw {
+    width: 100%;
+  }
+
+  &--white {
+    border: 1px solid $border-color-1;
+
+    &:hover {
+      border: 1px solid $blue;
+    }
+  }
+
+  &--orange {
+    background: $orangeDark;
+    color: #fff;
+
+    &:hover {
+      background: lighten($orangeDark, 5%);
+      color: #fff;
+    }
+  }
+
+  &--green {
+    background: $green;
+    color: #fff;
+
+    &:hover {
+      background: lighten($green, 5%);
+      color: #fff;
+    }
+  }
+}

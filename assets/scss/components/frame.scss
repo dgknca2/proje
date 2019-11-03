@@ -1,0 +1,7 @@
+@import "../variables/index";
+
+.frame {
+  border: 3px solid red &-container {
+    margin: 50px 0;
+  }
+}
