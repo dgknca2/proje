@@ -1,9 +1,26 @@
 <template>
-  <Page-Into></Page-Into>
+  <div>
+    <Nav></Nav>
+    <div class="page-wrapper">
+      <Menu></Menu>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+import Menu from "./components/Menu";
+import Nav from "./components/Nav";
+
+export default {
+  components: {
+    Menu: Menu,
+    Nav: Nav
+  },
+  data: function() {
+    return {};
+  },
+  methods: {}
+};
 </script>
 
 <style lang="scss">

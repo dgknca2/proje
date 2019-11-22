@@ -2,7 +2,7 @@
   <div>
     <nav class="nav">
       <div class="logo">
-        <img src="./assets/img/logo.png" alt="Logo" class="logo__img" />
+        <img src="./../assets/img/logo.png" alt="Logo" class="logo__img" />
       </div>
       <div class="search-box">
         <input type="text" placeholder="Write something" class="search-input" />
@@ -16,11 +16,6 @@
         <a href="#0" class="button button--white">
           <span class="button__wrp">
             <span class="button__txt">Log in</span>
-            <!-- <span class="button__icon">
-              <svg class="icon">
-                <use xlink:href="assets/img/icons.svg#icon-arrow-long-right"></use>
-              </svg>
-            </span>-->
           </span>
         </a>
         <a href="#0" class="button button--orange" @click="loginModal = !loginModal">

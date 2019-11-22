@@ -50,17 +50,19 @@
 </style>
 
 <script>
-import Profile from "./Profile";
-import Comments from "./Comments";
-import Answer from "./Answer";
-import Menu from "./Menu";
+import Profile from "./components/Profile";
+import Comments from "./components/Comments";
+import Answer from "./components/Answer";
+import Menu from "./components/Menu";
+import Nav from "./components/Nav";
 
 export default {
   components: {
     Profile: Profile,
     Comments: Comments,
     Menu: Menu,
-    Answer: Answer
+    Answer: Answer,
+    Nav:Nav
   },
   data: function() {
     return {};
