@@ -1,9 +1,9 @@
 <template>
   <div>
     <nav class="nav">
-      <div class="logo">
+      <a href="./index.html" class="logo">
         <img src="./../assets/img/logo.png" alt="Logo" class="logo__img" />
-      </div>
+      </a>
       <div class="search-box">
         <input type="text" placeholder="Write something" class="search-input" />
         <span class="search-icon">
@@ -49,11 +49,6 @@ export default {
       loginModal: false
     };
   },
-  methods: {
-    // openCommentBox() {
-    //   event.target.classList.add("d-none");
-    //   event.target.nextElementSibling.classList.add("d-block");
-    // }
-  }
+  methods: {}
 };
 </script>

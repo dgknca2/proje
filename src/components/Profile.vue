@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <a href="#0" class="profile-username">dgknca</a>
+      <a href="./profile.html" class="profile-username">dgknca</a>
     </div>
   </div>
 </template>

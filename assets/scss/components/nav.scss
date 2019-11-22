@@ -27,6 +27,7 @@
   height: 100%;
   width: 300px;
   flex-shrink: 0;
+  display: block;
 
   &__img {
     object-fit: contain;

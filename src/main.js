@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import PageInto from "./PageInto";
+import ProfilePage from "./ProfilePage";
 import Answer from "./components/Answer";
 import Comment from "./components/Comment";
 import Menu from "./components/Menu";
@@ -21,4 +22,9 @@ new Vue({
 new Vue({
   el: "#page_into",
   render: h => h(PageInto)
+});
+
+new Vue({
+  el: "#profile",
+  render: h => h(ProfilePage)
 });
