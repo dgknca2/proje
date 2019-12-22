@@ -13,12 +13,16 @@
         </span>
       </div>
       <div class="nav-right">
-        <a href="#0" class="button button--white">
+        <a href="#0" class="button button--white" @click="loginModal = !loginModal">
           <span class="button__wrp">
             <span class="button__txt">Log in</span>
           </span>
         </a>
-        <a href="#0" class="button button--orange" @click="loginModal = !loginModal">
+        <a
+          href="#0"
+          class="button button--orange"
+          @click="createAccountModal = !createAccountModal"
+        >
           <span class="button__wrp">
             <span class="button__txt">Create Account</span>
           </span>
@@ -30,7 +34,8 @@
         </a>
       </div>
     </nav>
-    <CreateAccount @data="loginModal = $event" :loginModal="loginModal"></CreateAccount>
+    <CreateAccount @data="createAccountModal = $event" :createAccountModal="createAccountModal"></CreateAccount>
+    <Login @data="loginModal = $event" :loginModal="loginModal"></Login>
   </div>
 </template>
 
@@ -39,13 +44,16 @@
 
 <script>
 import CreateAccount from "./CreateAccount";
+import Login from "./Login";
 
 export default {
   components: {
-    CreateAccount: CreateAccount
+    CreateAccount: CreateAccount,
+    Login
   },
   data: function() {
     return {
+      createAccountModal: false,
       loginModal: false
     };
   },

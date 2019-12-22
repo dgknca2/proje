@@ -7,6 +7,7 @@ import Comment from "./components/Comment";
 import Menu from "./components/Menu";
 import Nav from "./components/Nav";
 import Profile from "./components/Profile";
+import SharePost from "./SharePost";
 
 Vue.component("Answer", Answer);
 Vue.component("Comment", Comment);
@@ -27,4 +28,9 @@ new Vue({
 new Vue({
   el: "#profile",
   render: h => h(ProfilePage)
+});
+
+new Vue({
+  el: "#sharepost",
+  render: h => h(SharePost)
 });
