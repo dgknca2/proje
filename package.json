@@ -46,6 +46,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
