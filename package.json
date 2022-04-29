@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^2.5.11",
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "gulp-consolidate": "^0.2.0",
     "gulp-icomoon-builder": "^1.0.0",
     "gulp-iconfont": "^10.0.1",
